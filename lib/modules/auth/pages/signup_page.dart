@@ -31,15 +31,15 @@ class _SignupPageState extends State<SignupPage> {
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 24),
-            TextField(
-              decoration: const InputDecoration(
+            const TextField(
+              decoration: InputDecoration(
                 labelText: 'Nome completo',
                 border: OutlineInputBorder(),
               ),
             ),
             const SizedBox(height: 16),
-            TextField(
-              decoration: const InputDecoration(
+            const TextField(
+              decoration: InputDecoration(
                 labelText: 'Email',
                 border: OutlineInputBorder(),
               ),
