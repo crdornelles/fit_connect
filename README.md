@@ -17,6 +17,7 @@ Série completa no Medium: [em breve]
 Este repositório existe por um único motivo: ser o código de referência para a série de posts sobre Deep Links em Flutter. Cada post da série corresponde a uma branch, para que você possa acompanhar a evolução do código passo a passo.
 
 **Deep link principal:**
+
 ```
 https://fitconnect.app/signup?referralCode=TRAINER12345678901234
 ```
@@ -25,34 +26,37 @@ https://fitconnect.app/signup?referralCode=TRAINER12345678901234
 
 ## Série de Posts
 
-| # | Título | Branch | Post |
-|---|--------|--------|------|
-| 1 | Deep Links em Flutter: O Guia Definitivo para Iniciantes | `post/01-intro` | [em breve] |
-| 2 | Implementando Deep Links Nativos no Android (Kotlin) | `post/02-android` | [em breve] |
-| 3 | Deep Links Nativos no iOS: Custom Schemes e Universal Links | `post/03-ios` | [em breve] |
-| 4 | Conectando Tudo: Integração Flutter com Deep Links Nativos | `post/04-flutter` | [em breve] |
-| 5 | App Links e Universal Links: Deep Links em Produção | `post/05-producao` | [em breve] |
-| 6 | Deferred Deep Links: Quando o Usuário Ainda Não Tem o App | `post/06-deferred` | [em breve] |
-| 7 | Web Redirect: A Ponte Entre Navegador e App Store | `post/07-web-redirect` | [em breve] |
-| 8 | Testes, Deploy e Troubleshooting de Deep Links | `post/08-testes` | [em breve] |
-| 9 | Refatoração: DeepLinkHandler com Clean Architecture | `post/09-refatoracao` | [em breve] |
+| #   | Título                                                      | Branch                 | Post                                                                                                           |
+| --- | ----------------------------------------------------------- | ---------------------- | -------------------------------------------------------------------------------------------------------------- |
+| 1   | Deep Links em Flutter: O Guia Definitivo para Iniciantes    | `post/01-intro`        | [https://medium.com/@crdornelles/deep-links-em-flutter-o-guia-definitivo-para-iniciantes-parte-1-d56ea3619192] |
+| 2   | Implementando Deep Links Nativos no Android (Kotlin)        | `post/02-android`      | [em breve]                                                                                                     |
+| 3   | Deep Links Nativos no iOS: Custom Schemes e Universal Links | `post/03-ios`          | [em breve]                                                                                                     |
+| 4   | Conectando Tudo: Integração Flutter com Deep Links Nativos  | `post/04-flutter`      | [em breve]                                                                                                     |
+| 5   | App Links e Universal Links: Deep Links em Produção         | `post/05-producao`     | [em breve]                                                                                                     |
+| 6   | Deferred Deep Links: Quando o Usuário Ainda Não Tem o App   | `post/06-deferred`     | [em breve]                                                                                                     |
+| 7   | Web Redirect: A Ponte Entre Navegador e App Store           | `post/07-web-redirect` | [em breve]                                                                                                     |
+| 8   | Testes, Deploy e Troubleshooting de Deep Links              | `post/08-testes`       | [em breve]                                                                                                     |
+| 9   | Refatoração: DeepLinkHandler com Clean Architecture         | `post/09-refatoracao`  | [em breve]                                                                                                     |
 
 ---
 
 ## Como usar este repositório
 
 **1. Clone o repositório**
+
 ```bash
 git clone git@github.com:crdornelles/fit_connect.git
 cd fit_connect
 ```
 
 **2. Mude para a branch do post que está lendo**
+
 ```bash
 git checkout post/02-android
 ```
 
 **3. Instale as dependências e gere os arquivos do Freezed**
+
 ```bash
 flutter pub get
 dart run build_runner build --delete-conflicting-outputs
@@ -61,6 +65,7 @@ dart run build_runner build --delete-conflicting-outputs
 **4. Teste os deep links**
 
 Android:
+
 ```bash
 # Custom Scheme
 adb shell am start -a android.intent.action.VIEW \
@@ -72,6 +77,7 @@ adb shell am start -a android.intent.action.VIEW \
 ```
 
 iOS (simulador):
+
 ```bash
 xcrun simctl openurl booted \
   "https://fitconnect.app/signup?referralCode=TRAINER12345678901234"
