@@ -30,7 +30,7 @@ https://fitconnect.app/signup?referralCode=TRAINER12345678901234
 | --- | ----------------------------------------------------------- | ---------------------- | -------------------------------------------------------------------------------------------------------------- |
 | 1   | Deep Links em Flutter: O Guia Definitivo para Iniciantes    | `post/01-intro`        | [https://medium.com/@crdornelles/deep-links-em-flutter-o-guia-definitivo-para-iniciantes-parte-1-d56ea3619192] |
 | 2   | Implementando Deep Links Nativos no Android (Kotlin)        | `post/02-android`      | [https://medium.com/p/562bb353b3b2?postPublishedType=initial]                                                  |
-| 3   | Deep Links Nativos no iOS: Custom Schemes e Universal Links | `post/03-ios`          | [em breve]                                                                                                     |
+| 3   | Deep Links Nativos no iOS: Custom Schemes e Universal Links | `post/03-ios`          | [https://medium.com/@crdornelles/deep-links-no-ios-implementa%C3%A7%C3%A3o-nativa-com-swift-flutter-parte-3-d37569fd0a15] |
 | 4   | Conectando Tudo: Integração Flutter com Deep Links Nativos  | `post/04-flutter`      | [em breve]                                                                                                     |
 | 5   | App Links e Universal Links: Deep Links em Produção         | `post/05-producao`     | [em breve]                                                                                                     |
 | 6   | Deferred Deep Links: Quando o Usuário Ainda Não Tem o App   | `post/06-deferred`     | [em breve]                                                                                                     |
