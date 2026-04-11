@@ -22,13 +22,16 @@ class _AppWidgetState extends State<AppWidget> {
 
   Future<void> _initDeepLinks() async {
     final service = DeepLinkService();
-    await service.initialize();
 
+    // Listener registrado antes de initialize() para não perder
+    // o evento de cold start emitido durante a inicialização
     _deepLinkSub = service.deepLinkStream.listen((data) {
       if (data.path == '/signup' && data.referralCode != null) {
         _handleSignupLink(data);
       }
     });
+
+    await service.initialize();
   }
 
   void _handleSignupLink(DeepLinkData data) {
