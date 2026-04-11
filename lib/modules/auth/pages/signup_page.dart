@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
+import '../../../models/deep_link_data.dart';
 
 class SignupPage extends StatefulWidget {
   const SignupPage({super.key});
@@ -9,6 +11,17 @@ class SignupPage extends StatefulWidget {
 
 class _SignupPageState extends State<SignupPage> {
   final _referralCodeController = TextEditingController();
+  bool _cameFromDeepLink = false;
+
+  @override
+  void initState() {
+    super.initState();
+    final args = Modular.args.data;
+    if (args is DeepLinkData && args.referralCode != null) {
+      _referralCodeController.text = args.referralCode!;
+      _cameFromDeepLink = true;
+    }
+  }
 
   @override
   void dispose() {
@@ -48,11 +61,17 @@ class _SignupPageState extends State<SignupPage> {
             const SizedBox(height: 16),
             TextField(
               controller: _referralCodeController,
-              decoration: const InputDecoration(
-                labelText: 'Código de Indicação (opcional)',
-                border: OutlineInputBorder(),
+              decoration: InputDecoration(
+                labelText: _cameFromDeepLink
+                    ? 'Código de Indicação (via link)'
+                    : 'Código de Indicação (opcional)',
+                border: const OutlineInputBorder(),
+                suffixIcon: _cameFromDeepLink
+                    ? const Icon(Icons.link, color: Colors.green)
+                    : null,
               ),
               maxLength: 20,
+              enabled: true, // Sempre editável
             ),
             const SizedBox(height: 16),
             ElevatedButton(
