@@ -26,17 +26,17 @@ https://fitconnect.app/signup?referralCode=TRAINER12345678901234
 
 ## Série de Posts
 
-| #   | Título                                                      | Branch                 | Post                                                                                                           |
-| --- | ----------------------------------------------------------- | ---------------------- | -------------------------------------------------------------------------------------------------------------- |
-| 1   | Deep Links em Flutter: O Guia Definitivo para Iniciantes    | `post/01-intro`        | [https://medium.com/@crdornelles/deep-links-em-flutter-o-guia-definitivo-para-iniciantes-parte-1-d56ea3619192] |
-| 2   | Implementando Deep Links Nativos no Android (Kotlin)        | `post/02-android`      | [https://medium.com/p/562bb353b3b2?postPublishedType=initial]                                                  |
-| 3   | Deep Links Nativos no iOS: Custom Schemes e Universal Links | `post/03-ios`          | [https://medium.com/@crdornelles/deep-links-no-ios-implementa%C3%A7%C3%A3o-nativa-com-swift-flutter-parte-3-d37569fd0a15] |
-| 4   | Conectando Tudo: Integração Flutter com Deep Links Nativos  | `post/04-flutter`      | [em breve]                                                                                                     |
-| 5   | App Links e Universal Links: Deep Links em Produção         | `post/05-producao`     | [em breve]                                                                                                     |
-| 6   | Deferred Deep Links: Quando o Usuário Ainda Não Tem o App   | `post/06-deferred`     | [em breve]                                                                                                     |
-| 7   | Web Redirect: A Ponte Entre Navegador e App Store           | `post/07-web-redirect` | [em breve]                                                                                                     |
-| 8   | Testes, Deploy e Troubleshooting de Deep Links              | `post/08-testes`       | [em breve]                                                                                                     |
-| 9   | Refatoração: DeepLinkHandler com Clean Architecture         | `post/09-refatoracao`  | [em breve]                                                                                                     |
+| #   | Título                                                      | Branch                 | Post                                                                                                                       |
+| --- | ----------------------------------------------------------- | ---------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Deep Links em Flutter: O Guia Definitivo para Iniciantes    | `post/01-intro`        | [https://medium.com/@crdornelles/deep-links-em-flutter-o-guia-definitivo-para-iniciantes-parte-1-d56ea3619192]             |
+| 2   | Implementando Deep Links Nativos no Android (Kotlin)        | `post/02-android`      | [https://medium.com/p/562bb353b3b2?postPublishedType=initial]                                                              |
+| 3   | Deep Links Nativos no iOS: Custom Schemes e Universal Links | `post/03-ios`          | [https://medium.com/@crdornelles/deep-links-no-ios-implementa%C3%A7%C3%A3o-nativa-com-swift-flutter-parte-3-d37569fd0a15]  |
+| 4   | Conectando Tudo: Integração Flutter com Deep Links Nativos  | `post/04-flutter`      | [https://medium.com/@crdornelles/conectando-tudo-integra%C3%A7%C3%A3o-flutter-com-deep-links-nativos-parte-4-b9b23c6e32e5] |
+| 5   | App Links e Universal Links: Deep Links em Produção         | `post/05-producao`     | [em breve]                                                                                                                 |
+| 6   | Deferred Deep Links: Quando o Usuário Ainda Não Tem o App   | `post/06-deferred`     | [em breve]                                                                                                                 |
+| 7   | Web Redirect: A Ponte Entre Navegador e App Store           | `post/07-web-redirect` | [em breve]                                                                                                                 |
+| 8   | Testes, Deploy e Troubleshooting de Deep Links              | `post/08-testes`       | [em breve]                                                                                                                 |
+| 9   | Refatoração: DeepLinkHandler com Clean Architecture         | `post/09-refatoracao`  | [em breve]                                                                                                                 |
 
 ---
 
