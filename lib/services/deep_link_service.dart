@@ -70,7 +70,7 @@ class DeepLinkService {
 
   DeepLinkType _determineType(Uri uri) {
     if (uri.scheme == 'fitconnect') return DeepLinkType.customScheme;
-    if (uri.scheme == 'https' && uri.host == 'fitconnect.app') {
+    if (uri.scheme == 'https' && uri.host == 'deeplinkslab.dev') {
       return Platform.isIOS
           ? DeepLinkType.universalLink
           : DeepLinkType.appLink;
